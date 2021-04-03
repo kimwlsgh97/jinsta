@@ -1,0 +1,47 @@
+{
+  "name": "jinsta",
+  "version": "1.0.0",
+  "description": "insta clone",
+  "main": "https://github.com/kimwlsgh97/jinsta",
+  "scripts": {
+    "dev": "nodemon --exec babel-node src/server.js",
+    "deploy": "prisma deploy",
+    "generate": "prisma generate",
+    "prisma": "npm run deploy && npm run generate",
+    "prisma-f": "npm run deploy && npm run generate",
+    "mail": "nodemon --exec babel-node src/test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kimwlsgh97/jinsta.git"
+  },
+  "author": "jinho",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kimwlsgh97/jinsta/issues"
+  },
+  "homepage": "https://github.com/kimwlsgh97/jinsta#readme",
+  "dependencies": {
+    "@babel/core": "^7.10.2",
+    "@babel/node": "^7.10.1",
+    "@babel/preset-env": "^7.10.2",
+    "@prisma/client": "^2.0.1",
+    "@sendgrid/mail": "^7.2.0",
+    "babel-node": "0.0.1-security",
+    "dotenv": "^8.2.0",
+    "graphql-tools": "^6.0.10",
+    "graphql-yoga": "^1.18.3",
+    "jsonwebtoken": "^8.5.1",
+    "merge-graphql-schemas": "^1.7.8",
+    "morgan": "^1.10.0",
+    "nodemailer": "^6.4.10",
+    "nodemailer-sendgrid-transport": "^0.2.0",
+    "passport": "^0.4.1",
+    "passport-jwt": "^4.0.0",
+    "prisma-client-lib": "^1.34.10"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "nodemon": "^2.0.4"
+  }
+}
